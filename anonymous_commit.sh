@@ -1,0 +1,1 @@
+git -c user.name='NoName' -c user.email='noname@email.com' commit -m $1
