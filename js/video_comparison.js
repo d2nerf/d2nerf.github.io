@@ -109,6 +109,10 @@ function resizeAndPlay(element)
   var cv = document.getElementById(element.id + "Merge");
   cv.width = element.videoWidth/2;
   cv.height = element.videoHeight;
+
+  console.log("video height:" + element.videoHeight)
+  console.log("video width:" + element.videoWidth)
+
   element.play();
   element.style.height = "0px";  // Hide video without stopping it
     

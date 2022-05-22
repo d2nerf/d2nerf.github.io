@@ -3,7 +3,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Ref-NeRF</title>
+    <title>D^2NeRF</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,12 +14,12 @@
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dorverbin.github.io/refnerf">
-    <meta property="og:title" content="Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields">
-    <meta property="og:description" content="Neural Radiance Fields (NeRF) is a popular view synthesis technique that represents a scene as a continuous volumetric function, parameterized by multilayer perceptrons that provide the volume density and view-dependent emitted radiance at each location. While NeRF-based techniques excel at representing fine geometric structures with smoothly varying view-dependent appearance, they often fail to accurately capture and reproduce the appearance of glossy surfaces. We address this limitation by introducing Ref-NeRF, which replaces NeRF's parameterization of view-dependent outgoing radiance with a representation of reflected radiance and structures this function using a collection of spatially-varying scene properties. We show that together with a regularizer on normal vectors, our model significantly improves the realism and accuracy of specular reflections. Furthermore, we show that our model's internal representation of outgoing radiance is interpretable and useful for scene editing.">
+    <meta property="og:title" content="D^2NeRF: Self-Supervised Decoupling of Dynamic and Static Objects from a Monocular Video">
+    <meta property="og:description" content="Given a monocular video, segmenting and decoupling dynamic objects while recovering the static environment is a widely studied problem in machine intelligence. Existing solutions usually approach this problem in the image domain, limiting their performance and understanding of the environment. We introduce Decoupled Dynamic Neural Radiance Field (D^2NeRF), a self-supervised approach that takes a monocular video and learns a 3D scene representation which decouples moving objects, including their shadows, from the static background. Our method represents the moving objects and the static background by two separate neural radiance fields with only one allowing for temporal changes. A naive implementation of this approach leads to the dynamic component taking over the static one as the representation of the former is inherently more general and prone to overfitting. To this end, we propose a novel loss to promote correct separation of phenomena. We further propose a shadow field network to detect and decouple dynamically moving shadows. We introduce a new dataset containing various dynamic objects and shadows and demonstrate that our method can achieve better performance than state-of-the-art approaches in decoupling dynamic and static 3D objects, occlusion and shadow removal, and image segmentation for moving objects.">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields">
-    <meta name="twitter:description" content="Neural Radiance Fields (NeRF) is a popular view synthesis technique that represents a scene as a continuous volumetric function, parameterized by multilayer perceptrons that provide the volume density and view-dependent emitted radiance at each location. While NeRF-based techniques excel at representing fine geometric structures with smoothly varying view-dependent appearance, they often fail to accurately capture and reproduce the appearance of glossy surfaces. We address this limitation by introducing Ref-NeRF, which replaces NeRF's parameterization of view-dependent outgoing radiance with a representation of reflected radiance and structures this function using a collection of spatially-varying scene properties. We show that together with a regularizer on normal vectors, our model significantly improves the realism and accuracy of specular reflections. Furthermore, we show that our model's internal representation of outgoing radiance is interpretable and useful for scene editing.">
+    <meta name="twitter:title" content="D^2NeRF: Self-Supervised Decoupling of Dynamic and Static Objects from a Monocular Video">
+    <meta name="twitter:description" content="Given a monocular video, segmenting and decoupling dynamic objects while recovering the static environment is a widely studied problem in machine intelligence. Existing solutions usually approach this problem in the image domain, limiting their performance and understanding of the environment. We introduce Decoupled Dynamic Neural Radiance Field (D^2NeRF), a self-supervised approach that takes a monocular video and learns a 3D scene representation which decouples moving objects, including their shadows, from the static background. Our method represents the moving objects and the static background by two separate neural radiance fields with only one allowing for temporal changes. A naive implementation of this approach leads to the dynamic component taking over the static one as the representation of the former is inherently more general and prone to overfitting. To this end, we propose a novel loss to promote correct separation of phenomena. We further propose a shadow field network to detect and decouple dynamically moving shadows. We introduce a new dataset containing various dynamic objects and shadows and demonstrate that our method can achieve better performance than state-of-the-art approaches in decoupling dynamic and static 3D objects, occlusion and shadow removal, and image segmentation for moving objects.">
     <meta name="twitter:image" content="https://dorverbin.github.io/refnerf/img/refnerf_titlecard.jpg">
 
 
@@ -44,9 +44,9 @@
             <h2 class="col-md-12 text-center" id="title">
                 <b>D<sup>2</sup>NeRF</b>: Self-Supervised Decoupling of <br>Dynamic and
                 Static Objects from a Monocular Video<br>
-                <small>
+                <!-- <small>
                     CVPR 2022 (Oral Presentation)
-                </small>
+                </small> -->
             </h2>
         </div>
         <div class="row" id="author-row" style="margin:0 auto;">
@@ -72,25 +72,25 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/abs/2112.03907">
+                            <a href="D^2NeRF Self-Supervised Decoupling of Dynamic and Static Objects from a Monocular Video.pdf">
                             <img src="./img/paper_image.jpg" height="90px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="https://arxiv.org/abs/2112.03907">
-                            <img src="./img/paper_image.jpg" height="90px">
-                                <h4><strong>Data</strong></h4>
+                            <a href="">
+                            <img src="./img/data_icon.webp" height="90px">
+                                <h4><strong>Data (Coming)</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="https://arxiv.org/abs/2112.03907">
-                            <img src="./img/paper_image.jpg" height="90px">
+                            <a href="https://github.com/d2nerf/d2nerf">
+                            <img src="./img/github_icon.svg" height="90px">
                                 <h4><strong>Code</strong></h4>
                             </a>
                         </li>
                         <!-- <li>
-                            <a href="https://youtu.be/qrdRH9irAlk">
+                            <a href="">
                             <img src="./img/youtube_icon.png" height="90px">
                                 <h4><strong>Video</strong></h4>
                             </a>
@@ -103,13 +103,63 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="video-compare-container" id="materialsDiv">
-                    <video class="video" id="materials" loop playsinline autoPlay muted src="video/vrig_balloon_wave_crop.mp4" onplay="resizeAndPlay(this)"></video>
+                <div class="video-compare-container" id="balloonDiv">
+                    <video class="video" id="balloon" loop playsinline autoPlay muted src="video/vrig_balloon_wave_crop.mp4" onplay="resizeAndPlay(this)"></video>
                     
-                    <canvas height=0 class="videoMerge" id="materialsMerge"></canvas>
+                    <canvas height=0 class="videoMerge" id="balloonMerge"></canvas>
                 </div>
 			</div>
         </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="video-compare-container" id="waterDiv">
+                    <video class="video" id="water" loop playsinline autoPlay muted src="video/vrig_vrig_water_pour.mp4" onplay="resizeAndPlay(this)"></video>
+                    
+                    <canvas height=0 class="videoMerge" id="waterMerge"></canvas>
+                </div>
+			</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="video-compare-container-small">
+                    <video class="video" id="shark" loop playsinline autoPlay muted src="video/shark_scam.mp4" onplay="resizeAndPlay(this)"></video>
+                    <canvas height=0 class="videoMerge" id="sharkMerge"></canvas>
+                </div>
+			</div>
+        </div>
+
+
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="video-compare-container-small">
+                    <video id="editing-materials" width="100%" playsinline autoplay loop muted style="margin-top: -5%;">
+                        <source src="video/pick_drop_compare_all.mp4" type="video/mp4" />
+                    </video>
+                </div>
+			</div>
+        </div> -->
+
+
+        <div class="row" height="400">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    More results
+                </h3>
+
+                <div>
+                    <video id="editing-materials" width="100%" playsinline autoplay loop muted style="margin-top: -5%; height: auto; ">
+                        <source src="video/pick_drop_compare_all.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
 
 
         <div class="row">
@@ -118,27 +168,27 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-Neural Radiance Fields (NeRF) is a popular view synthesis technique that represents a scene as a continuous volumetric function, parameterized by multilayer perceptrons that provide the volume density and view-dependent emitted radiance at each location. While NeRF-based techniques excel at representing fine geometric structures with smoothly varying view-dependent appearance, they often fail to accurately capture and reproduce the appearance of glossy surfaces. We address this limitation by introducing Ref-NeRF, which replaces NeRF's parameterization of view-dependent outgoing radiance with a representation of reflected radiance and structures this function using a collection of spatially-varying scene properties. We show that together with a regularizer on normal vectors, our model significantly improves the realism and accuracy of specular reflections. Furthermore, we show that our model's internal representation of outgoing radiance is interpretable and useful for scene editing.
+                    Given a monocular video, segmenting and decoupling dynamic objects while recovering the static environment is a widely studied problem in machine intelligence. Existing solutions usually approach this problem in the image domain, limiting their performance and understanding of the environment. We introduce Decoupled Dynamic Neural Radiance Field (D^2NeRF), a self-supervised approach that takes a monocular video and learns a 3D scene representation which decouples moving objects, including their shadows, from the static background. Our method represents the moving objects and the static background by two separate neural radiance fields with only one allowing for temporal changes. A naive implementation of this approach leads to the dynamic component taking over the static one as the representation of the former is inherently more general and prone to overfitting. To this end, we propose a novel loss to promote correct separation of phenomena. We further propose a shadow field network to detect and decouple dynamically moving shadows. We introduce a new dataset containing various dynamic objects and shadows and demonstrate that our method can achieve better performance than state-of-the-art approaches in decoupling dynamic and static 3D objects, occlusion and shadow removal, and image segmentation for moving objects.
                 </p>
             </div>
         </div>
 
-        <image src="img/architecture.png" class="img-responsive" alt="overview" width="60%" style="max-height: 450px;margin:auto;">
+        <image src="img/method.png" class="img-responsive" alt="overview" width="60%" style="max-height: 450px;margin:auto;">
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Video
                 </h3>
                 <div class="text-center">
                     <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://youtube.com/embed/qrdRH9irAlk" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                        <iframe src="" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Reflection Direction Parameterization
@@ -204,9 +254,9 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                     <canvas height=0 class="videoMerge" id="toycarMerge"></canvas>
                 </div>
 			</div>
-        </div>
+        </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Scene Editing
@@ -243,10 +293,10 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
                 </table>
 
             </div>
-        </div>
+        </div> -->
 
             
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Citation
@@ -263,7 +313,7 @@ Neural Radiance Fields (NeRF) is a popular view synthesis technique that represe
 }</textarea>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
