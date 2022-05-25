@@ -186,6 +186,12 @@
                     <h3>
                         More results
                     </h3>
+
+                    <div class="text-justify">
+                        Our method decouples and reconstructs 3D models of dynamic occluders and static background from a monocular video:
+                        <br><br>
+                        
+                    </div>
                     
                     <table width="100%">
                         <tr>
@@ -205,9 +211,18 @@
                 </div>
             </div>
 
+            <div class="row" height="400">
+                <div class="col-md-8 col-md-offset-2">
+                    <div>
+                        <video id="editing-materials" width="100%" playsinline autoplay loop muted style="padding-top: 10px;">
+                            <source src="video/vrig_balloon_wave_crop_compare_test.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-
 
                 <div class="col-md-8 col-md-offset-2">
 
@@ -249,6 +264,22 @@
                     </video>
                 </div>
             </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="text-justify">
+                    Our method can also remove challenging view-correlated shadows, such as shadows cast by the camera or the photographer:
+                    <br><br>
+                    
+                </div>
+                <div class="video-compare-container" id="camShadowDiv">
+                    <video class="video" id="camShadow" loop playsinline autoPlay muted src="video/camera_shadow_v2.mp4" onplay="resizeAndPlay(this)"></video>
+                    
+                    <canvas height=0 class="videoMerge" id="camShadowMerge"></canvas>
+                </div>
+			</div>
         </div>
 
 
