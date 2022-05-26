@@ -283,6 +283,27 @@
         </div>
 
 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="text-justify">
+                    <br><br>
+                    Our method learns decoupled neural radiance fields, we can therefore render separate components from novel view. As a by-product, we better utilize the network capacity and learn more robust dynamic objects in the scene:  
+                    <br><br>
+                </div>
+                <div>
+                    <video id="editing-materials" width="100%" playsinline autoplay loop muted style="padding-top: 10px;">
+                        <source src="video/hypernerf_broom-vcam_compare_nv.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="video-compare-container-small" id="nvDiv">
+                    <video class="video" id="nv" loop playsinline autoPlay muted src="video/hypernerf_broom-vcam_compare_nv_hn.mp4" onplay="resizeAndPlay(this)"></video>
+                    
+                    <canvas height=0 class="videoMerge" id="nvMerge"></canvas>
+                </div>
+			</div>
+        </div>
+
+
         <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
